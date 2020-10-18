@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 AppDatabase db = AppDatabase.getInstance(MainActivity.this);
                 User[] users = db.userDao().getAllUser();
                 for (User u : users){
-                    Log.i(TAG, u.firstName);
+                    Log.i(TAG, u.firstName+" "+u.lastName);
                 }
             }
         });
